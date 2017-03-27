@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>演示：拖拉机理论复习题</title>
+<meta name="keywords" content="css3,jQuery,在线答题" />
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto}
+
+</style>
+<!-- <script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script> -->
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+<script src="quiz.js"></script>
+<script>
+var init={'questions':[{'question':'凡在中华人民共和国境内道路上通行的车辆驾驶人、行人、乘车人，都必须遵守《中华人民共和国道路交通安全法》。','answers':['对','错'],'correctAnswer':1},{'question':'在中华人民共和国境内与道路交通活动有关的单位和个人，都必须遵守《中华人民共和国道路交通安全法》。','answers':['对','错'],'correctAnswer':1},{'question':'在没有道路中心线或同方向只有一条机动车道的道路上，前车遇后车发出超车信号时，应当__。','answers':['A：加速通过','B：减速靠右通行','C：减速靠中间通行'],'correctAnswer':2},{'question':'机动车驶近急弯等影响安全视距的路段时，应当__，并鸣喇叭示意。','answers':['A：快速通过','B：使用危险报警闪光灯','C：减速慢行'],'correctAnswer':3}]};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+	
+
+
+<div id="main">
+   <h2 class="top_title">拖拉机理论复习题</h2>
+	<div class="demo">
+		<div id='quiz-container'></div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
